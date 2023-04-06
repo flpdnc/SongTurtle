@@ -44,19 +44,6 @@ int main(int argc, char* argv[]) {
             }
         }
 
-/*        // Update game objects and check for collisions
-        float frequency = audioInput.getPrimaryFrequency();
-        player.update(frequency);
-
-        for (auto& item : items) {
-            item.update();
-            if (SDL_HasIntersection(&player.getRect(), &item.getRect())) {
-                // Handle item collection here, e.g., increment score
-                item = items.back();
-                items.pop_back();
-            }
-        }
-*/
 	// Update game objects and check for collisions
         float frequency = audioInput.getPrimaryFrequency();
         player.update(frequency);
